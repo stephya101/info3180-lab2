@@ -1,3 +1,89 @@
 body {
     padding-top: 5rem;
+
 }
+
+    div.pcard{
+        display:flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+        border: solid black .07em;
+        border-radius: 1.25em;
+        padding-bottom: 2em;
+
+        
+    }
+
+    div#info_1 {
+        display:flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        background: #69AA73;
+        width: 100%;
+        color: white;
+        border-top-right-radius: 1.2em;
+        border-top-left-radius: 1.2em;
+        padding-top: 3em;
+        
+    }
+
+    div#info_2 {
+        display:flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        width: 100%;
+        border-bottom-right-radius: 1em;
+        border-bottom-left-radius: 1em;
+        text-align: center;
+        
+        
+        
+    }
+
+    img {
+        border-radius: 50%;
+        width: 10em;
+    }
+
+    .container{
+        width: auto;
+        padding: 20px 5px;
+
+    }
+
+    .btn {
+        background-color: limegreen;
+        width: 40%;
+        color: white;
+    
+    }
+
+
+    .numbers {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .item {
+        flex: 1;
+        font-size: 15px;
+        text-align: center;
+        margin: .05em;
+        width: 5em;
+        align-content: center;
+        
+    }
+
+    item span {
+        display: inline-block;
+        font-size: 10px;
+        text-align: center;
+        align-content: center;
+
+    }

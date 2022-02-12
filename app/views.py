@@ -4,7 +4,7 @@ Jinja2 Documentation:    https://jinja.palletsprojects.com/
 Werkzeug Documentation:  https://werkzeug.palletsprojects.com/
 This file creates your application.
 """
-
+import datetime
 from app import app
 from flask import render_template, request, redirect, url_for, flash
 
@@ -34,6 +34,15 @@ def send_text_file(file_name):
     """Send your static text file."""
     file_dot_text = file_name + '.txt'
     return app.send_static_file(file_dot_text)
+
+def format_date_joined(dateT):
+    date_time = "Joined " + dateT.strftime("%B, %Y")
+    return date_time
+
+#Part 1
+@app.route('/profile')
+def profile():
+    return render_template('profile.html', dateString=format_date_joined(datetime.datetime.now()))
 
 
 @app.after_request

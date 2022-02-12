@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block css %}<link rel="stylesheet" href="{{url_for('static', filename='css/app.css')}}"/> {% endblock%}
+
+{% block main %} 
+
+<div class="pcard">
+   
+    <div id="info_1">
+        <img src="{{url_for('static', filename='me.jpg') }}">
+        <h2>Stephanie Allen</h2>
+        <p>@Stephya101</p>
+        <p>Montego Bay, Jamaica</p>
+        <p>{{dateString}}</p>
+    </div>
+    <div id="info_2">
+        <p>I am a dependable, commercially aware and contientous professional. Contact me for an interview</p>
+            <div class="container">
+                <div class="numbers">
+                    <div class="item">
+                            <span>7 posts</span>
+                        </div>
+                    <div class="item">
+                            <span>100 following</span>
+                        </div>
+                    <div class="item">
+                            <span>250 followers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <button class="btn">Follow</button>
+</div>
+
+{% endblock %}
